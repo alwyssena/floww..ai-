@@ -1,0 +1,48 @@
+###
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "username":"j",
+    "password":"Indra@321"
+}
+
+
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"j",
+    "password":"Indra@321"
+}
+
+
+
+###
+
+POST http://localhost:3000/transactions
+Content-Type: application/json
+
+{
+    "type":"expense",
+    "category":"Indra@321",
+    "amount":"300"
+}
+
+
+
+###
+
+GET  http://localhost:3000/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImoiLCJpYXQiOjE3Mjk2NTg5NzcsImV4cCI6MTcyOTc0NTM3N30.uIsufhiSbqIjpy-GfjybOlr7VBHZYdHk-EH8TuTY_18
+
+
+###
+
+GET  http://localhost:3000/summary
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImoiLCJpYXQiOjE3Mjk2NTg5NzcsImV4cCI6MTcyOTc0NTM3N30.uIsufhiSbqIjpy-GfjybOlr7VBHZYdHk-EH8TuTY_18
+
+
